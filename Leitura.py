@@ -19,12 +19,7 @@ if uploaded_file is not None:
 
     visualization_option = st.sidebar.selectbox("Selecione Visualização", ["Correlation Heatmap", "Histograms", "Box Plots", "Scatter Plot"])
 
-    if visualization_option == "Correlation Heatmap":
-        st.subheader("Correlation Heatmap")
-        correlation_matrix = df_temp.corr()
-        fig = plt.figure()
-        sns.heatmap(correlation_matrix, annot=True, cmap="coolwarm", ax=fig.gca())
-        st.pyplot(fig)
+ 
 
     elif visualization_option == "Histograms":
         st.subheader("Histograms")
