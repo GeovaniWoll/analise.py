@@ -21,7 +21,7 @@ if uploaded_file is not None:
 
  
 
-    elif visualization_option == "Histograms":
+    if visualization_option == "Histograms":
         st.subheader("Histograms")
         for column in df_temp.columns:
             st.write(f"{column} distribution")
