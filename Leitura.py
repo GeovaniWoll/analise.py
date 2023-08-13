@@ -17,7 +17,7 @@ if uploaded_file is not None:
     st.subheader("DataFrame")
     st.write(df_temp.head())
 
-    visualization_option = st.sidebar.selectbox("Selecione Visualização", ["Correlation Heatmap", "Histograms", "Box Plots", "Scatter Plot"])
+    visualization_option = st.sidebar.selectbox("Selecione Visualização", ["Histograms", "Box Plots", "Scatter Plot"])
 
  
 
